@@ -1,0 +1,29 @@
+
+#include <iostream>
+#include <stack>
+
+using namespace std;
+
+int main() {
+    
+    string str1 = "Keshav";
+    
+    stack<char> s;
+    
+    for(int i=0; i<str1.length();i++){
+        
+       s.push(str1[i]);
+    }
+    string ans = "";
+    
+    while(!s.empty()){
+        
+       char ch = s.top();
+       ans.push_back(ch);
+       s.pop();
+        
+    }
+    cout<<"Answer is : "<<ans;
+
+    return 0;
+}
